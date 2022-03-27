@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/chongqing.js"></script>
+
+</head>
+<body>
+    <div id="ca7e42507fb94596963dcb6fd01d7389" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_ca7e42507fb94596963dcb6fd01d7389 = echarts.init(
+            document.getElementById('ca7e42507fb94596963dcb6fd01d7389'), 'white', {renderer: 'canvas'});
+        var option_ca7e42507fb94596963dcb6fd01d7389 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "effectScatter",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 5,
+            "data": [
+                {
+                    "name": "\u6cb9\u623f\u793e\u533a",
+                    "value": [
+                        108.369754,
+                        30.264442,
+                        10
+                    ]
+                },
+                {
+                    "name": "\u77f3\u5cad\u793e\u533a",
+                    "value": [
+                        108.169602,
+                        30.117501,
+                        12
+                    ]
+                },
+                {
+                    "name": "\u5927\u6c99\u793e\u533a",
+                    "value": [
+                        108.220918,
+                        30.15585,
+                        18
+                    ]
+                },
+                {
+                    "name": "\u8001\u6797\u6751",
+                    "value": [
+                        108.181548,
+                        30.153456,
+                        9
+                    ]
+                },
+                {
+                    "name": "\u9752\u9f99\u6751",
+                    "value": [
+                        108.195153,
+                        30.138481,
+                        7
+                    ]
+                },
+                {
+                    "name": "\u4e2d\u6d77\u6751",
+                    "value": [
+                        108.240783,
+                        30.157556,
+                        29
+                    ]
+                },
+                {
+                    "name": "\u6c38\u4e30\u6751",
+                    "value": [
+                        108.18856,
+                        30.132772,
+                        10
+                    ]
+                },
+                {
+                    "name": "\u957f\u576a\u6751",
+                    "value": [
+                        108.186502,
+                        30.102161,
+                        12
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u91cd\u5e86-\u77f3\u67f1\u8d2b\u56f0\u6237\u6570\u5206\u5e03",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "min": 1,
+                "max": 10,
+                "label": "1-10",
+                "color": "#3700A4"
+            },
+            {
+                "min": 10,
+                "max": 20,
+                "label": "10-20",
+                "color": "#81AE9F"
+            },
+            {
+                "min": 20,
+                "max": 30,
+                "label": "20-30",
+                "color": "#E2C568"
+            },
+            {
+                "min": 30,
+                "max": 50,
+                "label": "30-50",
+                "color": "#FCF84D"
+            },
+            {
+                "min": 50,
+                "max": 100,
+                "label": "50-100",
+                "color": "#DD0200"
+            },
+            {
+                "min": 100,
+                "max": 200,
+                "label": "100-200",
+                "color": "#DD675E"
+            },
+            {
+                "min": 200,
+                "max": 300,
+                "label": "200-300",
+                "color": "#50A3BA"
+            },
+            {
+                "min": 300,
+                "label": "300\u4ee5\u4e0a",
+                "color": "#D94E5D"
+            }
+        ]
+    },
+    "geo": {
+        "map": "\u91cd\u5e86",
+        "roam": true,
+        "aspectScale": 0.75,
+        "nameProperty": "name",
+        "selectedMode": false,
+        "emphasis": {}
+    }
+};
+        chart_ca7e42507fb94596963dcb6fd01d7389.setOption(option_ca7e42507fb94596963dcb6fd01d7389);
+    </script>
+</body>
+</html>
